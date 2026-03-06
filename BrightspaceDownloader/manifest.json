@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Brightspace Downloader Helper",
+  "version": "1.1",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://brightspace.algonquincollege.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
